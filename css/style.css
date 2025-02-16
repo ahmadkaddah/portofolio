@@ -24,10 +24,18 @@ header .MainCard {
 }
 
 header .MainCard img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border: 5px solid #72ace7;
     margin-bottom: 20px;
-    width: 130px;
-    height: 130px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+header .MainCard img:hover {
+    transform: scale(1.05);
 }
 
 header .MainCard h1 {
